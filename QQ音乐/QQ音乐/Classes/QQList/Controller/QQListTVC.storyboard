@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yfT-Mh-SwE">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ListTVC-->
+        <scene sceneID="c34-83-Mua">
+            <objects>
+                <tableViewController id="yfT-Mh-SwE" customClass="QQListTVC" customModule="QQ音乐" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="BYU-DG-RwI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="yfT-Mh-SwE" id="I89-ME-fDa"/>
+                            <outlet property="delegate" destination="yfT-Mh-SwE" id="Og4-mX-ZWY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="WRN-TX-aP7"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                    <connections>
+                        <segue destination="097-Wb-NBB" kind="show" identifier="listToDetial" id="IKN-Xk-L4R"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rpM-U2-jha" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18" y="-510"/>
+        </scene>
+        <!--QQDetialVC-->
+        <scene sceneID="qxo-PY-s9w">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QQDetialVC" id="097-Wb-NBB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vJL-n9-pTV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18" y="143"/>
+        </scene>
+    </scenes>
+</document>
